@@ -8,11 +8,11 @@ public class CreateJobRequestPOJO {
 	private int mst_warrenty_status_id;
 	private int mst_oem_id;
 	private Customer customer;
-	private Customer_address custadd;
-	private Customer_product custprod;
+	private Customer_address customer_address;
+	private Customer_product customer_product;
 	private Problems[] problems;
 	public CreateJobRequestPOJO(int mst_service_location_id, int mst_platform_id, int mst_warrenty_status_id,
-			int mst_oem_id, Customer customer, Customer_address custadd, Customer_product custprod,
+			int mst_oem_id, Customer customer, Customer_address customer_address, Customer_product customer_product,
 			Problems[] problems) {
 		super();
 		this.mst_service_location_id = mst_service_location_id;
@@ -20,8 +20,8 @@ public class CreateJobRequestPOJO {
 		this.mst_warrenty_status_id = mst_warrenty_status_id;
 		this.mst_oem_id = mst_oem_id;
 		this.customer = customer;
-		this.custadd = custadd;
-		this.custprod = custprod;
+		this.customer_address = customer_address;
+		this.customer_product = customer_product;
 		this.problems = problems;
 	}
 	public int getMst_service_location_id() {
@@ -54,17 +54,17 @@ public class CreateJobRequestPOJO {
 	public void setCustomer(Customer customer) {
 		this.customer = customer;
 	}
-	public Customer_address getCustadd() {
-		return custadd;
+	public Customer_address getcustomer_address() {
+		return customer_address;
 	}
-	public void setCustadd(Customer_address custadd) {
-		this.custadd = custadd;
+	public void setcustomer_address(Customer_address customer_address) {
+		this.customer_address = customer_address;
 	}
-	public Customer_product getCustprod() {
-		return custprod;
+	public Customer_product getcustomer_product() {
+		return customer_product;
 	}
-	public void setCustprod(Customer_product custprod) {
-		this.custprod = custprod;
+	public void setcustomer_product(Customer_product customer_product) {
+		this.customer_product = customer_product;
 	}
 	public Problems[] getProblems() {
 		return problems;
@@ -76,7 +76,7 @@ public class CreateJobRequestPOJO {
 	public String toString() {
 		return "CreateJobRequestPOJO [mst_service_location_id=" + mst_service_location_id + ", mst_platform_id="
 				+ mst_platform_id + ", mst_warrenty_status_id=" + mst_warrenty_status_id + ", mst_oem_id=" + mst_oem_id
-				+ ", customer=" + customer + ", custadd=" + custadd + ", custprod=" + custprod + ", problems="
+				+ ", customer=" + customer + ", customer_address=" + customer_address + ", customer_product=" + customer_product + ", problems="
 				+ Arrays.toString(problems) + "]";
 	}
 	
